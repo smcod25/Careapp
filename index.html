@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HCLTech Healthcare</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="logo">HCLTech Healthcare</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button class="book-btn" onclick="bookNow()">Book Now</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <h1>Tech Drives Patient Care <strong>Forward</strong></h1>
+        <p>
+          Personalized healthcare. New care delivery options. Ongoing cost pressures against the ever-changing regulatory framework.
+          <br><br>
+          <strong>Technology is transforming healthcare like never before.</strong><br><br>
+          From telemedicine to AI-driven diagnostics, HCLTech empowers healthcare providers to modernize digital environments,
+          deliver personalized care, and make advanced treatments more accessible.
+        </p>
+        <button class="book-btn hero-btn" onclick="bookNow()">Book Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <h2>Our Services</h2>
+    <div class="service-list">
+      <div class="service-item">Digital Health Platforms</div>
+      <div class="service-item">Healthcare Data Analytics</div>
+      <div class="service-item">Patient Experience Solutions</div>
+      <div class="service-item">Regulatory Compliance & QA</div>
+      <div class="service-item">Medical Device Engineering</div>
+      <div class="service-item">Pharma R&D IT Services</div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <h2>About HCLTech Healthcare</h2>
+    <p>HCLTech collaborates with global healthcare providers, payers, pharmaceuticals, and medical device companies to modernize systems, harness AI/ML insights, and deliver connected care. Our goal is to make healthcare accessible, affordable, and advanced—powering the future of digital health transformation.</p>
+  </section>
+
+  <!-- Doctor Profile Section -->
+<section class="doctor-profile" id="doctor-profile">
+  <h2>Dr. Shubham Mishra</h2>
+  <div class="doctor-details">
+    <div class="doctor-photo">
+      <img src="images/doctor.jpg" alt="Dr. Shubham Mishra" />
+    </div>
+    <div class="doctor-info">
+      <h3>Chief Surgeon</h3>
+      <p><strong>Credentials:</strong> MD, FACS, PhD</p>
+      <p><strong>Specialization:</strong> Cardiac Surgery, Minimally Invasive Techniques</p>
+      <p><strong>Expertise Summary:</strong> Dr. Shubham is an experienced surgeon with over 20 years of expertise in performing advanced heart surgeries. His specialization lies in minimally invasive procedures that ensure faster recovery times for patients.</p>
+      <button onclick="checkAvailability()">Check Availability</button>
+    </div>
+  </div>
+</section>
+
+<!-- Availability Check Section -->
+<section class="availability-check" id="availability-check">
+  <h2>Check Doctor's Availability</h2>
+  <form id="availability-form">
+    <label for="date">Select Date:</label>
+    <input type="date" id="date" name="date" required>
+
+    <label for="time">Select Time:</label>
+    <input type="time" id="time" name="time" required>
+
+    <label for="slot">Select Slot:</label>
+    <select id="slot" name="slot" required>
+      <option value="slot1">9:00 AM - 10:00 AM</option>
+      <option value="slot2">10:00 AM - 11:00 AM</option>
+      <option value="slot3">11:00 AM - 12:00 PM</option>
+      <option value="slot4">1:00 PM - 2:00 PM</option>
+      <option value="slot5">2:00 PM - 3:00 PM</option>
+    </select>
+
+    <button type="submit">Check Availability</button>
+  </form>
+  <div id="availability-result" class="availability-result"></div>
+</section>
+
+
+  <!-- Footer -->
+  <footer id="contact">
+    <p>&copy; 2025 HCLTech Healthcare. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+  <!-- Authentication Section -->
+<section class="auth-section" id="login">
+  <div class="auth-container">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <input type="text" id="username" placeholder="Username" required />
+      <input type="password" id="password" placeholder="Password" required />
+      <button type="submit">Login</button>
+      <p id="loginError" class="error-msg"></p>
+    </form>
+  </div>
+</section>
+</body>
+</html>

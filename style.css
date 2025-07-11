@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  line-height: 1.6;
+  background-color: #f8f9fa;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #002b5c;
+  padding: 1rem 2rem;
+  color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+.logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.navbar nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.navbar nav ul li {
+  margin-left: 1.2rem;
+}
+.navbar nav ul li a,
+.book-btn {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border: 2px solid white;
+  border-radius: 5px;
+  background: transparent;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.navbar nav ul li a:hover,
+.book-btn:hover {
+  background-color: white;
+  color: #002b5c;
+}
+.hero {
+  height: 100vh;
+  background: url('doctor.jpg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+  position: relative;
+}
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.55);
+  padding: 4rem 2rem;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  max-width: 850px;
+}
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.hero p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+.services {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #ffffff;
+}
+.services h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.service-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.service-item {
+  background-color: #f1f1f1;
+  padding: 1.5rem 2rem;
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  font-weight: 600;
+}
+.about {
+  padding: 3rem 2rem;
+  text-align: center;
+  background-color: #f8f9fa;
+}
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.about p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  color: #333;
+}
+footer {
+  background-color: #002b5c;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+.auth-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+  background-color: #f2f2f2;
+}
+
+.auth-container {
+  background: white;
+  padding: 30px 40px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+.auth-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.auth-container input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.auth-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #0078d4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.auth-container button:hover {
+  background-color: #005ea6;
+}
+.doctor-profile {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #f8f9fa;
+}
+
+.doctor-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.doctor-photo img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.doctor-info {
+  max-width: 600px;
+  text-align: left;
+}
+
+.doctor-info h3 {
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.doctor-info p {
+  font-size: 1rem;
+  color: #777;
+  line-height: 1.6;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #0078d4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+button:hover {
+  background-color: #005ea6;
+}
+
+.availability-check {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+#availability-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+#availability-form label {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+#availability-form input,
+#availability-form select {
+  padding: 10px;
+  margin-bottom: 15px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #0078d4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005ea6;
+}
+
+.availability-result {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: green;
+}
